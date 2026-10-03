@@ -16,15 +16,37 @@
     Reveal-animation flag: adds the "js" class (unless reduced motion is requested).
     If the main script never reports in (window.__ok) within 4s, the class is removed
     so content is never left invisible.
-  -->
-  <script>
-    if (!matchMedia('(prefers-reduced-motion:reduce)').matches) {
-      document.documentElement.classList.add('js');
-      setTimeout(function () {
-        window.__ok || document.documentElement.classList.remove('js');
-      }, 4000);
-    }
-  </script>
+  --><!-- Google AI SEO Schema (Atif Effects) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Atif Effects",
+  "jobTitle": "Motion Graphics Designer & Video Editor",
+  "url": "https://atif-effects.github.io/",
+  "sameAs": [
+    "https://www.facebook.com/YOUR_FACEBOOK_PAGE",
+    "https://www.instagram.com/YOUR_INSTAGRAM",
+    "https://www.youtube.com/@YOUR_YOUTUBE"
+  ],
+  "knowsAbout": ["Motion Graphics", "Video Editing", "YouTube Shorts SEO", "3D Thumbnail Design"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karachi",
+    "addressCountry": "Pakistan"
+  }
+}
+</script>
+
+<!-- Tumhara original matchMedia wala code -->
+<script>
+  if (!matchMedia('(prefers-reduced-motion:reduce)').matches) {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      window.__ok || document.documentElement.classList.remove('js');
+    }, 4000);
+  }
+</script>
 
   <style>
     /* --- Root & Global Styles --- */
