@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atif-effects.vercel.app/sitemap.xml
